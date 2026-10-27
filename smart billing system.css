@@ -1,0 +1,112 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.login-box,
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 380px;
+
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+    color: #218838;
+    margin-top: 0;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+
+    margin-top: 20px;
+
+    background-color: #28a745;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.bill {
+    margin-top: 25px;
+}
+
+.bill h2 {
+    font-size: 19px;
+}
+
+.bill p {
+    line-height: 1.6;
+}
+
+.bill h3 {
+    color: #218838;
+}
+
+#status {
+    color: #dc3545;
+}
+
+.logout {
+    background-color: #555;
+}
+
+.logout:hover {
+    background-color: #333;
+}
+
+[hidden] {
+    display: none !important;
+}
+

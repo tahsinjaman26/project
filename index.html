@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MessPay</title>
+
+    <link rel="stylesheet" href="smart billing system.css">
+</head>
+
+<body>
+
+    <!-- Login Window -->
+    <main class="login-box" id="loginWindow">
+
+        <h1>MessPay</h1>
+        <p class="subtitle">Login to view your mess bill</p>
+
+        <form id="loginForm">
+
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter phone number"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+                required
+            >
+
+            <label for="room">Room Number</label>
+            <input
+                type="text"
+                id="room"
+                placeholder="Enter room number"
+                required
+            >
+
+            <button type="submit">Login</button>
+
+            <p id="loginMessage" role="status"></p>
+
+        </form>
+
+    </main>
+
+
+    <!-- MessPay Dashboard -->
+    <main class="container" id="dashboard" hidden>
+
+        <h1>MessPay</h1>
+        <p class="subtitle">Your monthly mess bill</p>
+
+        <label for="month">Select Month</label>
+
+        <select id="month" onchange="showBill()">
+            <option value="2026-10">October 2026</option>
+            <option value="2026-11">November 2026</option>
+            <option value="2026-12">December 2026</option>
+        </select>
+
+        <section class="bill">
+
+            <h2>Member: <span id="memberName">Tahsin Jaman</span></h2>
+
+            <p>
+                Room Rent:
+                <span id="rent">3000</span> BDT
+            </p>
+
+            <p>
+                Electricity Bill:
+                <span id="electricity">450</span> BDT
+            </p>
+
+            <hr>
+
+            <h3>
+                Total:
+                <span id="total">3450</span> BDT
+            </h3>
+
+            <p>
+                Status:
+                <strong id="status">Unpaid</strong>
+            </p>
+
+            <button type="button" onclick="payNow()">Pay Now</button>
+
+            <p id="message" role="status"></p>
+
+            <button type="button" class="logout" onclick="logout()">
+                Logout
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="smart billing system.js"></script>
+
+</body>
+</html>
+
